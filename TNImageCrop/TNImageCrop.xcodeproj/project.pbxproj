@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04CDD5A91C22FA68008FD5E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5A81C22FA68008FD5E2 /* main.m */; };
+		04CDD5AC1C22FA68008FD5E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5AB1C22FA68008FD5E2 /* AppDelegate.m */; };
+		04CDD5B21C22FA68008FD5E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5B01C22FA68008FD5E2 /* Main.storyboard */; };
+		04CDD5B41C22FA68008FD5E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5B31C22FA68008FD5E2 /* Assets.xcassets */; };
+		04CDD5B71C22FA68008FD5E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5B51C22FA68008FD5E2 /* LaunchScreen.storyboard */; };
+		04CDD5C21C22FA68008FD5E2 /* TNImageCropTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5C11C22FA68008FD5E2 /* TNImageCropTests.m */; };
+		04CDD5CD1C22FA68008FD5E2 /* TNImageCropUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5CC1C22FA68008FD5E2 /* TNImageCropUITests.m */; };
+		04CDD5E91C22FAF8008FD5E2 /* EditCropFrameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5DB1C22FAF8008FD5E2 /* EditCropFrameVC.m */; };
+		04CDD5EA1C22FAF8008FD5E2 /* EditCropFrameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5DC1C22FAF8008FD5E2 /* EditCropFrameVC.xib */; };
+		04CDD5EB1C22FAF8008FD5E2 /* TNCapionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5DE1C22FAF8008FD5E2 /* TNCapionBar.m */; };
+		04CDD5EC1C22FAF8008FD5E2 /* TNCropImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5E01C22FAF8008FD5E2 /* TNCropImageView.m */; };
+		04CDD5ED1C22FAF8008FD5E2 /* TNSelectPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5E21C22FAF8008FD5E2 /* TNSelectPhotoManager.m */; };
+		04CDD5EE1C22FAF8008FD5E2 /* UIImage+SaveToAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5E41C22FAF8008FD5E2 /* UIImage+SaveToAlbum.m */; };
+		04CDD5EF1C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5E61C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.m */; };
+		04CDD5F01C22FAF8008FD5E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5E81C22FAF8008FD5E2 /* ViewController.m */; };
+		04CDD5FD1C22FB0B008FD5E2 /* TN_image_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5F21C22FB0B008FD5E2 /* TN_image_selected.png */; };
+		04CDD5FE1C22FB0B008FD5E2 /* TN_image_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5F31C22FB0B008FD5E2 /* TN_image_selected@2x.png */; };
+		04CDD5FF1C22FB0B008FD5E2 /* TN_image_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5F41C22FB0B008FD5E2 /* TN_image_selected@3x.png */; };
+		04CDD6001C22FB0B008FD5E2 /* TNLocalImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5F61C22FB0B008FD5E2 /* TNLocalImageCell.m */; };
+		04CDD6011C22FB0B008FD5E2 /* TNLocalImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5F81C22FB0B008FD5E2 /* TNLocalImageManager.m */; };
+		04CDD6021C22FB0B008FD5E2 /* TNLocalImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5FA1C22FB0B008FD5E2 /* TNLocalImageModel.m */; };
+		04CDD6031C22FB0B008FD5E2 /* TNLocalImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5FC1C22FB0B008FD5E2 /* TNLocalImageVC.m */; };
+		04CDD6051C22FB1A008FD5E2 /* students1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD6041C22FB1A008FD5E2 /* students1.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04CDD5BE1C22FA68008FD5E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04CDD59C1C22FA68008FD5E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04CDD5A31C22FA68008FD5E2;
+			remoteInfo = TNImageCrop;
+		};
+		04CDD5C91C22FA68008FD5E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04CDD59C1C22FA68008FD5E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04CDD5A31C22FA68008FD5E2;
+			remoteInfo = TNImageCrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04CDD5A41C22FA68008FD5E2 /* TNImageCrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNImageCrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CDD5A81C22FA68008FD5E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04CDD5AA1C22FA68008FD5E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04CDD5AB1C22FA68008FD5E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04CDD5B11C22FA68008FD5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04CDD5B31C22FA68008FD5E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04CDD5B61C22FA68008FD5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04CDD5B81C22FA68008FD5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CDD5BD1C22FA68008FD5E2 /* TNImageCropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TNImageCropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CDD5C11C22FA68008FD5E2 /* TNImageCropTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNImageCropTests.m; sourceTree = "<group>"; };
+		04CDD5C31C22FA68008FD5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CDD5C81C22FA68008FD5E2 /* TNImageCropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TNImageCropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CDD5CC1C22FA68008FD5E2 /* TNImageCropUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNImageCropUITests.m; sourceTree = "<group>"; };
+		04CDD5CE1C22FA68008FD5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CDD5DA1C22FAF8008FD5E2 /* EditCropFrameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCropFrameVC.h; sourceTree = "<group>"; };
+		04CDD5DB1C22FAF8008FD5E2 /* EditCropFrameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCropFrameVC.m; sourceTree = "<group>"; };
+		04CDD5DC1C22FAF8008FD5E2 /* EditCropFrameVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditCropFrameVC.xib; sourceTree = "<group>"; };
+		04CDD5DD1C22FAF8008FD5E2 /* TNCapionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCapionBar.h; sourceTree = "<group>"; };
+		04CDD5DE1C22FAF8008FD5E2 /* TNCapionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCapionBar.m; sourceTree = "<group>"; };
+		04CDD5DF1C22FAF8008FD5E2 /* TNCropImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCropImageView.h; sourceTree = "<group>"; };
+		04CDD5E01C22FAF8008FD5E2 /* TNCropImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCropImageView.m; sourceTree = "<group>"; };
+		04CDD5E11C22FAF8008FD5E2 /* TNSelectPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSelectPhotoManager.h; sourceTree = "<group>"; };
+		04CDD5E21C22FAF8008FD5E2 /* TNSelectPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSelectPhotoManager.m; sourceTree = "<group>"; };
+		04CDD5E31C22FAF8008FD5E2 /* UIImage+SaveToAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SaveToAlbum.h"; sourceTree = "<group>"; };
+		04CDD5E41C22FAF8008FD5E2 /* UIImage+SaveToAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SaveToAlbum.m"; sourceTree = "<group>"; };
+		04CDD5E51C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBarItem.h"; sourceTree = "<group>"; };
+		04CDD5E61C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBarItem.m"; sourceTree = "<group>"; };
+		04CDD5E71C22FAF8008FD5E2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04CDD5E81C22FAF8008FD5E2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04CDD5F21C22FB0B008FD5E2 /* TN_image_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TN_image_selected.png; sourceTree = "<group>"; };
+		04CDD5F31C22FB0B008FD5E2 /* TN_image_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TN_image_selected@2x.png"; sourceTree = "<group>"; };
+		04CDD5F41C22FB0B008FD5E2 /* TN_image_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TN_image_selected@3x.png"; sourceTree = "<group>"; };
+		04CDD5F51C22FB0B008FD5E2 /* TNLocalImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageCell.h; sourceTree = "<group>"; };
+		04CDD5F61C22FB0B008FD5E2 /* TNLocalImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageCell.m; sourceTree = "<group>"; };
+		04CDD5F71C22FB0B008FD5E2 /* TNLocalImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageManager.h; sourceTree = "<group>"; };
+		04CDD5F81C22FB0B008FD5E2 /* TNLocalImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageManager.m; sourceTree = "<group>"; };
+		04CDD5F91C22FB0B008FD5E2 /* TNLocalImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageModel.h; sourceTree = "<group>"; };
+		04CDD5FA1C22FB0B008FD5E2 /* TNLocalImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageModel.m; sourceTree = "<group>"; };
+		04CDD5FB1C22FB0B008FD5E2 /* TNLocalImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageVC.h; sourceTree = "<group>"; };
+		04CDD5FC1C22FB0B008FD5E2 /* TNLocalImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageVC.m; sourceTree = "<group>"; };
+		04CDD6041C22FB1A008FD5E2 /* students1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = students1.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04CDD5A11C22FA68008FD5E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDD5BA1C22FA68008FD5E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDD5C51C22FA68008FD5E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04CDD59B1C22FA68008FD5E2 = {
+			isa = PBXGroup;
+			children = (
+				04CDD5A61C22FA68008FD5E2 /* TNImageCrop */,
+				04CDD5C01C22FA68008FD5E2 /* TNImageCropTests */,
+				04CDD5CB1C22FA68008FD5E2 /* TNImageCropUITests */,
+				04CDD5A51C22FA68008FD5E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04CDD5A51C22FA68008FD5E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04CDD5A41C22FA68008FD5E2 /* TNImageCrop.app */,
+				04CDD5BD1C22FA68008FD5E2 /* TNImageCropTests.xctest */,
+				04CDD5C81C22FA68008FD5E2 /* TNImageCropUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04CDD5A61C22FA68008FD5E2 /* TNImageCrop */ = {
+			isa = PBXGroup;
+			children = (
+				04CDD5AA1C22FA68008FD5E2 /* AppDelegate.h */,
+				04CDD5AB1C22FA68008FD5E2 /* AppDelegate.m */,
+				04CDD5DA1C22FAF8008FD5E2 /* EditCropFrameVC.h */,
+				04CDD5DB1C22FAF8008FD5E2 /* EditCropFrameVC.m */,
+				04CDD5DC1C22FAF8008FD5E2 /* EditCropFrameVC.xib */,
+				04CDD5DD1C22FAF8008FD5E2 /* TNCapionBar.h */,
+				04CDD5DE1C22FAF8008FD5E2 /* TNCapionBar.m */,
+				04CDD5DF1C22FAF8008FD5E2 /* TNCropImageView.h */,
+				04CDD5E01C22FAF8008FD5E2 /* TNCropImageView.m */,
+				04CDD5E11C22FAF8008FD5E2 /* TNSelectPhotoManager.h */,
+				04CDD5E21C22FAF8008FD5E2 /* TNSelectPhotoManager.m */,
+				04CDD5E31C22FAF8008FD5E2 /* UIImage+SaveToAlbum.h */,
+				04CDD5E41C22FAF8008FD5E2 /* UIImage+SaveToAlbum.m */,
+				04CDD5E51C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.h */,
+				04CDD5E61C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.m */,
+				04CDD5E71C22FAF8008FD5E2 /* ViewController.h */,
+				04CDD5E81C22FAF8008FD5E2 /* ViewController.m */,
+				04CDD6041C22FB1A008FD5E2 /* students1.png */,
+				04CDD5F11C22FB0B008FD5E2 /* MultiSelectPhoto */,
+				04CDD5B01C22FA68008FD5E2 /* Main.storyboard */,
+				04CDD5B31C22FA68008FD5E2 /* Assets.xcassets */,
+				04CDD5B51C22FA68008FD5E2 /* LaunchScreen.storyboard */,
+				04CDD5B81C22FA68008FD5E2 /* Info.plist */,
+				04CDD5A71C22FA68008FD5E2 /* Supporting Files */,
+			);
+			path = TNImageCrop;
+			sourceTree = "<group>";
+		};
+		04CDD5A71C22FA68008FD5E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04CDD5A81C22FA68008FD5E2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04CDD5C01C22FA68008FD5E2 /* TNImageCropTests */ = {
+			isa = PBXGroup;
+			children = (
+				04CDD5C11C22FA68008FD5E2 /* TNImageCropTests.m */,
+				04CDD5C31C22FA68008FD5E2 /* Info.plist */,
+			);
+			path = TNImageCropTests;
+			sourceTree = "<group>";
+		};
+		04CDD5CB1C22FA68008FD5E2 /* TNImageCropUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04CDD5CC1C22FA68008FD5E2 /* TNImageCropUITests.m */,
+				04CDD5CE1C22FA68008FD5E2 /* Info.plist */,
+			);
+			path = TNImageCropUITests;
+			sourceTree = "<group>";
+		};
+		04CDD5F11C22FB0B008FD5E2 /* MultiSelectPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				04CDD5F21C22FB0B008FD5E2 /* TN_image_selected.png */,
+				04CDD5F31C22FB0B008FD5E2 /* TN_image_selected@2x.png */,
+				04CDD5F41C22FB0B008FD5E2 /* TN_image_selected@3x.png */,
+				04CDD5F51C22FB0B008FD5E2 /* TNLocalImageCell.h */,
+				04CDD5F61C22FB0B008FD5E2 /* TNLocalImageCell.m */,
+				04CDD5F71C22FB0B008FD5E2 /* TNLocalImageManager.h */,
+				04CDD5F81C22FB0B008FD5E2 /* TNLocalImageManager.m */,
+				04CDD5F91C22FB0B008FD5E2 /* TNLocalImageModel.h */,
+				04CDD5FA1C22FB0B008FD5E2 /* TNLocalImageModel.m */,
+				04CDD5FB1C22FB0B008FD5E2 /* TNLocalImageVC.h */,
+				04CDD5FC1C22FB0B008FD5E2 /* TNLocalImageVC.m */,
+			);
+			path = MultiSelectPhoto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04CDD5A31C22FA68008FD5E2 /* TNImageCrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CDD5D11C22FA68008FD5E2 /* Build configuration list for PBXNativeTarget "TNImageCrop" */;
+			buildPhases = (
+				04CDD5A01C22FA68008FD5E2 /* Sources */,
+				04CDD5A11C22FA68008FD5E2 /* Frameworks */,
+				04CDD5A21C22FA68008FD5E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TNImageCrop;
+			productName = TNImageCrop;
+			productReference = 04CDD5A41C22FA68008FD5E2 /* TNImageCrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04CDD5BC1C22FA68008FD5E2 /* TNImageCropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CDD5D41C22FA68008FD5E2 /* Build configuration list for PBXNativeTarget "TNImageCropTests" */;
+			buildPhases = (
+				04CDD5B91C22FA68008FD5E2 /* Sources */,
+				04CDD5BA1C22FA68008FD5E2 /* Frameworks */,
+				04CDD5BB1C22FA68008FD5E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04CDD5BF1C22FA68008FD5E2 /* PBXTargetDependency */,
+			);
+			name = TNImageCropTests;
+			productName = TNImageCropTests;
+			productReference = 04CDD5BD1C22FA68008FD5E2 /* TNImageCropTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04CDD5C71C22FA68008FD5E2 /* TNImageCropUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CDD5D71C22FA68008FD5E2 /* Build configuration list for PBXNativeTarget "TNImageCropUITests" */;
+			buildPhases = (
+				04CDD5C41C22FA68008FD5E2 /* Sources */,
+				04CDD5C51C22FA68008FD5E2 /* Frameworks */,
+				04CDD5C61C22FA68008FD5E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04CDD5CA1C22FA68008FD5E2 /* PBXTargetDependency */,
+			);
+			name = TNImageCropUITests;
+			productName = TNImageCropUITests;
+			productReference = 04CDD5C81C22FA68008FD5E2 /* TNImageCropUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04CDD59C1C22FA68008FD5E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = lyd;
+				TargetAttributes = {
+					04CDD5A31C22FA68008FD5E2 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					04CDD5BC1C22FA68008FD5E2 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 04CDD5A31C22FA68008FD5E2;
+					};
+					04CDD5C71C22FA68008FD5E2 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 04CDD5A31C22FA68008FD5E2;
+					};
+				};
+			};
+			buildConfigurationList = 04CDD59F1C22FA68008FD5E2 /* Build configuration list for PBXProject "TNImageCrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04CDD59B1C22FA68008FD5E2;
+			productRefGroup = 04CDD5A51C22FA68008FD5E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04CDD5A31C22FA68008FD5E2 /* TNImageCrop */,
+				04CDD5BC1C22FA68008FD5E2 /* TNImageCropTests */,
+				04CDD5C71C22FA68008FD5E2 /* TNImageCropUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04CDD5A21C22FA68008FD5E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CDD5B71C22FA68008FD5E2 /* LaunchScreen.storyboard in Resources */,
+				04CDD5B41C22FA68008FD5E2 /* Assets.xcassets in Resources */,
+				04CDD5FD1C22FB0B008FD5E2 /* TN_image_selected.png in Resources */,
+				04CDD6051C22FB1A008FD5E2 /* students1.png in Resources */,
+				04CDD5FE1C22FB0B008FD5E2 /* TN_image_selected@2x.png in Resources */,
+				04CDD5EA1C22FAF8008FD5E2 /* EditCropFrameVC.xib in Resources */,
+				04CDD5FF1C22FB0B008FD5E2 /* TN_image_selected@3x.png in Resources */,
+				04CDD5B21C22FA68008FD5E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDD5BB1C22FA68008FD5E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDD5C61C22FA68008FD5E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CDD5A01C22FA68008FD5E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CDD5F01C22FAF8008FD5E2 /* ViewController.m in Sources */,
+				04CDD5EE1C22FAF8008FD5E2 /* UIImage+SaveToAlbum.m in Sources */,
+				04CDD5EC1C22FAF8008FD5E2 /* TNCropImageView.m in Sources */,
+				04CDD6001C22FB0B008FD5E2 /* TNLocalImageCell.m in Sources */,
+				04CDD5AC1C22FA68008FD5E2 /* AppDelegate.m in Sources */,
+				04CDD5EF1C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.m in Sources */,
+				04CDD5ED1C22FAF8008FD5E2 /* TNSelectPhotoManager.m in Sources */,
+				04CDD6011C22FB0B008FD5E2 /* TNLocalImageManager.m in Sources */,
+				04CDD6031C22FB0B008FD5E2 /* TNLocalImageVC.m in Sources */,
+				04CDD5EB1C22FAF8008FD5E2 /* TNCapionBar.m in Sources */,
+				04CDD5E91C22FAF8008FD5E2 /* EditCropFrameVC.m in Sources */,
+				04CDD5A91C22FA68008FD5E2 /* main.m in Sources */,
+				04CDD6021C22FB0B008FD5E2 /* TNLocalImageModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDD5B91C22FA68008FD5E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CDD5C21C22FA68008FD5E2 /* TNImageCropTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDD5C41C22FA68008FD5E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CDD5CD1C22FA68008FD5E2 /* TNImageCropUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04CDD5BF1C22FA68008FD5E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04CDD5A31C22FA68008FD5E2 /* TNImageCrop */;
+			targetProxy = 04CDD5BE1C22FA68008FD5E2 /* PBXContainerItemProxy */;
+		};
+		04CDD5CA1C22FA68008FD5E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04CDD5A31C22FA68008FD5E2 /* TNImageCrop */;
+			targetProxy = 04CDD5C91C22FA68008FD5E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04CDD5B01C22FA68008FD5E2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CDD5B11C22FA68008FD5E2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04CDD5B51C22FA68008FD5E2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CDD5B61C22FA68008FD5E2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04CDD5CF1C22FA68008FD5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04CDD5D01C22FA68008FD5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04CDD5D21C22FA68008FD5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TNImageCrop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LYD.TNImageCrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04CDD5D31C22FA68008FD5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TNImageCrop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LYD.TNImageCrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04CDD5D51C22FA68008FD5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TNImageCropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LYD.TNImageCropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TNImageCrop.app/TNImageCrop";
+			};
+			name = Debug;
+		};
+		04CDD5D61C22FA68008FD5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TNImageCropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LYD.TNImageCropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TNImageCrop.app/TNImageCrop";
+			};
+			name = Release;
+		};
+		04CDD5D81C22FA68008FD5E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TNImageCropUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LYD.TNImageCropUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TNImageCrop;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		04CDD5D91C22FA68008FD5E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TNImageCropUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LYD.TNImageCropUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TNImageCrop;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04CDD59F1C22FA68008FD5E2 /* Build configuration list for PBXProject "TNImageCrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CDD5CF1C22FA68008FD5E2 /* Debug */,
+				04CDD5D01C22FA68008FD5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CDD5D11C22FA68008FD5E2 /* Build configuration list for PBXNativeTarget "TNImageCrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CDD5D21C22FA68008FD5E2 /* Debug */,
+				04CDD5D31C22FA68008FD5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04CDD5D41C22FA68008FD5E2 /* Build configuration list for PBXNativeTarget "TNImageCropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CDD5D51C22FA68008FD5E2 /* Debug */,
+				04CDD5D61C22FA68008FD5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04CDD5D71C22FA68008FD5E2 /* Build configuration list for PBXNativeTarget "TNImageCropUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CDD5D81C22FA68008FD5E2 /* Debug */,
+				04CDD5D91C22FA68008FD5E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04CDD59C1C22FA68008FD5E2 /* Project object */;
+}
