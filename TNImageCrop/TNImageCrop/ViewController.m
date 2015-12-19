@@ -10,7 +10,6 @@
 #import "TNCropImageView.h"
 #import "TNLocalImageManager.h"
 #import "EditCropFrameVC.h"
-#import "TNSelectPhotoManager.h"
 #import "UIImage+SaveToAlbum.h"
 #import "TNCapionBar.h"
 
@@ -22,9 +21,6 @@
     
     //截图边框size
     CGSize _cropSize;
-    
-    //相册管理类
-    TNSelectPhotoManager *_photoManager;
 }
 
 @end
@@ -35,7 +31,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    _cropSize = CGSizeMake(120, 120);
+    _cropSize = CGSizeMake(150, 150);
     //图片裁切类
     _cropImageView = [[TNCropImageView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetWidth(self.view.frame)) cropFrameSize:_cropSize isRoubdFrame:YES];
     [_cropImageView setCropImageContent:[UIImage imageNamed:@"students1"]];
@@ -67,7 +63,7 @@
     _cropImageView.cropImageCompletionHandle = ^(UIImage *newImage) {
         //显示裁剪之后的图片
         imageView.image = newImage;
-        NSLog(@"imageView === %@",imageView);
+        NSLog(@"cropImage === %@",imageView);
     };
 }
 
@@ -93,44 +89,27 @@
     }else if (btn.tag == 1) {//选择图片
         
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"选择照片" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+        
+        //照片选择类
+        TNLocalImageManager *localImageManager = [[TNLocalImageManager alloc] initWithCompletionHandle:^(NSArray *selectedImageArray) {
+            TNLocalImageModel *model = [selectedImageArray firstObject];
+            [self selectedImageFinish:model.itemImage filePath:model.itemImagePath];
+        }];
+
         UIAlertAction *cameraAction = [UIAlertAction actionWithTitle:@"相机拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            
-            if (!_photoManager) {
-                
-                _photoManager = [[TNSelectPhotoManager alloc] init];
-                _photoManager.superVC = self;
-                
-                __weak typeof(self)mySelf = self;
-                //选择照片回调
-                _photoManager.successHandle = ^(UIImage *image,NSString *filePath) {
-                    [mySelf selectedImageFinish:image filePath:filePath];
-                };
-            }
-            [_photoManager startSelectPhotoWithType:TNSelectPhotoCamera];
-            
+            localImageManager.imageSelector = TNLocalImageSeletorCamera;
+            [self presentViewController:localImageManager animated:YES completion:nil];
+
         }];
         
         UIAlertAction *albumAction = [UIAlertAction actionWithTitle:@"默认相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            localImageManager.imageSelector = TNLocalImageSeletorSystemAlbum;
+            [self presentViewController:localImageManager animated:YES completion:nil];
             
-            if (!_photoManager) {
-                
-                _photoManager = [[TNSelectPhotoManager alloc] init];
-                _photoManager.superVC = self;
-                
-                __weak typeof(self)mySelf = self;
-                //选择照片回调
-                _photoManager.successHandle = ^(UIImage *image,NSString *filePath) {
-                    [mySelf selectedImageFinish:image filePath:filePath];
-                };
-            }
-            [_photoManager startSelectPhotoWithType:TNSelectPhotoAlbum];
         }];
         
         UIAlertAction *libraryAction = [UIAlertAction actionWithTitle:@"自定义相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            TNLocalImageManager *localImageManager = [[TNLocalImageManager alloc] initWithCompletionHandle:^(NSArray *selectedImageArray) {
-                TNLocalImageModel *model = [selectedImageArray firstObject];
-                [self selectedImageFinish:model.itemImage filePath:model.itemImagePath];
-            }];
+            localImageManager.imageSelector = TNLocalImageSeletorCustomAlbum;
             localImageManager.maximumNumberOfImages = 1;
             [self presentViewController:localImageManager animated:YES completion:nil];
         }];
@@ -149,7 +128,7 @@
     }else {//保存相册
         [_imageView.image saveToAlbumCompletionHandle:^(BOOL success) {
             NSString *title = success?@"图片保存到相册成功!":@"图片保存的相册失败!";
-            [TNCapionBar showScreenBottomCapionBarInView:self.view CapionTitle:title];
+            [TNCapionBar showScreenBottomCapionBarInView:self.view CapionTitle:title isShowSame:NO];
         }];
     }
 }
@@ -158,7 +137,7 @@
 - (void)selectedImageFinish:(UIImage *)image filePath:(NSString *)filePath {
     [_cropImageView setCropImageContent:image];
     //删除本地文件缓存
-    [TNSelectPhotoManager clearSelectPhoto:filePath];
+    [[NSFileManager defaultManager] removeItemAtPath:filePath error:nil];
 }
 
 - (void)didReceiveMemoryWarning {

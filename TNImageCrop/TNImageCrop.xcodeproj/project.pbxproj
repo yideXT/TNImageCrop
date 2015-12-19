@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044FF9371C255952002FC55C /* TNCropImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF9361C255952002FC55C /* TNCropImageView.m */; };
+		044FF93D1C255960002FC55C /* UIImage+SaveToAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF93A1C255960002FC55C /* UIImage+SaveToAlbum.m */; };
+		044FF93E1C255960002FC55C /* UIViewController+NavigationBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF93C1C255960002FC55C /* UIViewController+NavigationBarItem.m */; };
+		044FF94D1C2559CB002FC55C /* TN_image_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 044FF9401C2559CB002FC55C /* TN_image_selected.png */; };
+		044FF94E1C2559CB002FC55C /* TN_image_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044FF9411C2559CB002FC55C /* TN_image_selected@2x.png */; };
+		044FF94F1C2559CB002FC55C /* TN_image_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044FF9421C2559CB002FC55C /* TN_image_selected@3x.png */; };
+		044FF9501C2559CB002FC55C /* TNCustomImageSelectorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF9441C2559CB002FC55C /* TNCustomImageSelectorVC.m */; };
+		044FF9511C2559CB002FC55C /* TNLocalImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF9461C2559CB002FC55C /* TNLocalImageCell.m */; };
+		044FF9521C2559CB002FC55C /* TNLocalImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF9481C2559CB002FC55C /* TNLocalImageManager.m */; };
+		044FF9531C2559CB002FC55C /* TNLocalImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF94A1C2559CB002FC55C /* TNLocalImageModel.m */; };
+		044FF9541C2559CB002FC55C /* TNSystemImageSelectorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF94C1C2559CB002FC55C /* TNSystemImageSelectorVC.m */; };
+		044FF9571C2563C0002FC55C /* TNCapionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FF9561C2563C0002FC55C /* TNCapionBar.m */; };
 		04CDD5A91C22FA68008FD5E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5A81C22FA68008FD5E2 /* main.m */; };
 		04CDD5AC1C22FA68008FD5E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5AB1C22FA68008FD5E2 /* AppDelegate.m */; };
 		04CDD5B21C22FA68008FD5E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5B01C22FA68008FD5E2 /* Main.storyboard */; };
@@ -16,19 +28,7 @@
 		04CDD5CD1C22FA68008FD5E2 /* TNImageCropUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5CC1C22FA68008FD5E2 /* TNImageCropUITests.m */; };
 		04CDD5E91C22FAF8008FD5E2 /* EditCropFrameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5DB1C22FAF8008FD5E2 /* EditCropFrameVC.m */; };
 		04CDD5EA1C22FAF8008FD5E2 /* EditCropFrameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5DC1C22FAF8008FD5E2 /* EditCropFrameVC.xib */; };
-		04CDD5EB1C22FAF8008FD5E2 /* TNCapionBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5DE1C22FAF8008FD5E2 /* TNCapionBar.m */; };
-		04CDD5EC1C22FAF8008FD5E2 /* TNCropImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5E01C22FAF8008FD5E2 /* TNCropImageView.m */; };
-		04CDD5ED1C22FAF8008FD5E2 /* TNSelectPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5E21C22FAF8008FD5E2 /* TNSelectPhotoManager.m */; };
-		04CDD5EE1C22FAF8008FD5E2 /* UIImage+SaveToAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5E41C22FAF8008FD5E2 /* UIImage+SaveToAlbum.m */; };
-		04CDD5EF1C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5E61C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.m */; };
 		04CDD5F01C22FAF8008FD5E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5E81C22FAF8008FD5E2 /* ViewController.m */; };
-		04CDD5FD1C22FB0B008FD5E2 /* TN_image_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5F21C22FB0B008FD5E2 /* TN_image_selected.png */; };
-		04CDD5FE1C22FB0B008FD5E2 /* TN_image_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5F31C22FB0B008FD5E2 /* TN_image_selected@2x.png */; };
-		04CDD5FF1C22FB0B008FD5E2 /* TN_image_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD5F41C22FB0B008FD5E2 /* TN_image_selected@3x.png */; };
-		04CDD6001C22FB0B008FD5E2 /* TNLocalImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5F61C22FB0B008FD5E2 /* TNLocalImageCell.m */; };
-		04CDD6011C22FB0B008FD5E2 /* TNLocalImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5F81C22FB0B008FD5E2 /* TNLocalImageManager.m */; };
-		04CDD6021C22FB0B008FD5E2 /* TNLocalImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5FA1C22FB0B008FD5E2 /* TNLocalImageModel.m */; };
-		04CDD6031C22FB0B008FD5E2 /* TNLocalImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDD5FC1C22FB0B008FD5E2 /* TNLocalImageVC.m */; };
 		04CDD6051C22FB1A008FD5E2 /* students1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDD6041C22FB1A008FD5E2 /* students1.png */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +50,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044FF9351C255952002FC55C /* TNCropImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCropImageView.h; sourceTree = "<group>"; };
+		044FF9361C255952002FC55C /* TNCropImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCropImageView.m; sourceTree = "<group>"; };
+		044FF9391C255960002FC55C /* UIImage+SaveToAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SaveToAlbum.h"; sourceTree = "<group>"; };
+		044FF93A1C255960002FC55C /* UIImage+SaveToAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SaveToAlbum.m"; sourceTree = "<group>"; };
+		044FF93B1C255960002FC55C /* UIViewController+NavigationBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBarItem.h"; sourceTree = "<group>"; };
+		044FF93C1C255960002FC55C /* UIViewController+NavigationBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBarItem.m"; sourceTree = "<group>"; };
+		044FF9401C2559CB002FC55C /* TN_image_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TN_image_selected.png; sourceTree = "<group>"; };
+		044FF9411C2559CB002FC55C /* TN_image_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TN_image_selected@2x.png"; sourceTree = "<group>"; };
+		044FF9421C2559CB002FC55C /* TN_image_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TN_image_selected@3x.png"; sourceTree = "<group>"; };
+		044FF9431C2559CB002FC55C /* TNCustomImageSelectorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCustomImageSelectorVC.h; sourceTree = "<group>"; };
+		044FF9441C2559CB002FC55C /* TNCustomImageSelectorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCustomImageSelectorVC.m; sourceTree = "<group>"; };
+		044FF9451C2559CB002FC55C /* TNLocalImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageCell.h; sourceTree = "<group>"; };
+		044FF9461C2559CB002FC55C /* TNLocalImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageCell.m; sourceTree = "<group>"; };
+		044FF9471C2559CB002FC55C /* TNLocalImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageManager.h; sourceTree = "<group>"; };
+		044FF9481C2559CB002FC55C /* TNLocalImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageManager.m; sourceTree = "<group>"; };
+		044FF9491C2559CB002FC55C /* TNLocalImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageModel.h; sourceTree = "<group>"; };
+		044FF94A1C2559CB002FC55C /* TNLocalImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageModel.m; sourceTree = "<group>"; };
+		044FF94B1C2559CB002FC55C /* TNSystemImageSelectorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSystemImageSelectorVC.h; sourceTree = "<group>"; };
+		044FF94C1C2559CB002FC55C /* TNSystemImageSelectorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSystemImageSelectorVC.m; sourceTree = "<group>"; };
+		044FF9551C2563C0002FC55C /* TNCapionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCapionBar.h; sourceTree = "<group>"; };
+		044FF9561C2563C0002FC55C /* TNCapionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCapionBar.m; sourceTree = "<group>"; };
 		04CDD5A41C22FA68008FD5E2 /* TNImageCrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNImageCrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CDD5A81C22FA68008FD5E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04CDD5AA1C22FA68008FD5E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,29 +88,8 @@
 		04CDD5DA1C22FAF8008FD5E2 /* EditCropFrameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCropFrameVC.h; sourceTree = "<group>"; };
 		04CDD5DB1C22FAF8008FD5E2 /* EditCropFrameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCropFrameVC.m; sourceTree = "<group>"; };
 		04CDD5DC1C22FAF8008FD5E2 /* EditCropFrameVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditCropFrameVC.xib; sourceTree = "<group>"; };
-		04CDD5DD1C22FAF8008FD5E2 /* TNCapionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCapionBar.h; sourceTree = "<group>"; };
-		04CDD5DE1C22FAF8008FD5E2 /* TNCapionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCapionBar.m; sourceTree = "<group>"; };
-		04CDD5DF1C22FAF8008FD5E2 /* TNCropImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNCropImageView.h; sourceTree = "<group>"; };
-		04CDD5E01C22FAF8008FD5E2 /* TNCropImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNCropImageView.m; sourceTree = "<group>"; };
-		04CDD5E11C22FAF8008FD5E2 /* TNSelectPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSelectPhotoManager.h; sourceTree = "<group>"; };
-		04CDD5E21C22FAF8008FD5E2 /* TNSelectPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSelectPhotoManager.m; sourceTree = "<group>"; };
-		04CDD5E31C22FAF8008FD5E2 /* UIImage+SaveToAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SaveToAlbum.h"; sourceTree = "<group>"; };
-		04CDD5E41C22FAF8008FD5E2 /* UIImage+SaveToAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SaveToAlbum.m"; sourceTree = "<group>"; };
-		04CDD5E51C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBarItem.h"; sourceTree = "<group>"; };
-		04CDD5E61C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBarItem.m"; sourceTree = "<group>"; };
 		04CDD5E71C22FAF8008FD5E2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		04CDD5E81C22FAF8008FD5E2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		04CDD5F21C22FB0B008FD5E2 /* TN_image_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TN_image_selected.png; sourceTree = "<group>"; };
-		04CDD5F31C22FB0B008FD5E2 /* TN_image_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TN_image_selected@2x.png"; sourceTree = "<group>"; };
-		04CDD5F41C22FB0B008FD5E2 /* TN_image_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TN_image_selected@3x.png"; sourceTree = "<group>"; };
-		04CDD5F51C22FB0B008FD5E2 /* TNLocalImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageCell.h; sourceTree = "<group>"; };
-		04CDD5F61C22FB0B008FD5E2 /* TNLocalImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageCell.m; sourceTree = "<group>"; };
-		04CDD5F71C22FB0B008FD5E2 /* TNLocalImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageManager.h; sourceTree = "<group>"; };
-		04CDD5F81C22FB0B008FD5E2 /* TNLocalImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageManager.m; sourceTree = "<group>"; };
-		04CDD5F91C22FB0B008FD5E2 /* TNLocalImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageModel.h; sourceTree = "<group>"; };
-		04CDD5FA1C22FB0B008FD5E2 /* TNLocalImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageModel.m; sourceTree = "<group>"; };
-		04CDD5FB1C22FB0B008FD5E2 /* TNLocalImageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNLocalImageVC.h; sourceTree = "<group>"; };
-		04CDD5FC1C22FB0B008FD5E2 /* TNLocalImageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNLocalImageVC.m; sourceTree = "<group>"; };
 		04CDD6041C22FB1A008FD5E2 /* students1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = students1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +118,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044FF9341C255952002FC55C /* imageCrop */ = {
+			isa = PBXGroup;
+			children = (
+				044FF9351C255952002FC55C /* TNCropImageView.h */,
+				044FF9361C255952002FC55C /* TNCropImageView.m */,
+			);
+			path = imageCrop;
+			sourceTree = "<group>";
+		};
+		044FF9381C255960002FC55C /* category */ = {
+			isa = PBXGroup;
+			children = (
+				044FF9391C255960002FC55C /* UIImage+SaveToAlbum.h */,
+				044FF93A1C255960002FC55C /* UIImage+SaveToAlbum.m */,
+				044FF93B1C255960002FC55C /* UIViewController+NavigationBarItem.h */,
+				044FF93C1C255960002FC55C /* UIViewController+NavigationBarItem.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		044FF93F1C2559CB002FC55C /* MultiSelectPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				044FF9471C2559CB002FC55C /* TNLocalImageManager.h */,
+				044FF9481C2559CB002FC55C /* TNLocalImageManager.m */,
+				044FF9431C2559CB002FC55C /* TNCustomImageSelectorVC.h */,
+				044FF9441C2559CB002FC55C /* TNCustomImageSelectorVC.m */,
+				044FF94B1C2559CB002FC55C /* TNSystemImageSelectorVC.h */,
+				044FF94C1C2559CB002FC55C /* TNSystemImageSelectorVC.m */,
+				044FF9491C2559CB002FC55C /* TNLocalImageModel.h */,
+				044FF94A1C2559CB002FC55C /* TNLocalImageModel.m */,
+				044FF9451C2559CB002FC55C /* TNLocalImageCell.h */,
+				044FF9461C2559CB002FC55C /* TNLocalImageCell.m */,
+				044FF9401C2559CB002FC55C /* TN_image_selected.png */,
+				044FF9411C2559CB002FC55C /* TN_image_selected@2x.png */,
+				044FF9421C2559CB002FC55C /* TN_image_selected@3x.png */,
+			);
+			path = MultiSelectPhoto;
+			sourceTree = "<group>";
+		};
 		04CDD59B1C22FA68008FD5E2 = {
 			isa = PBXGroup;
 			children = (
@@ -143,23 +183,17 @@
 			children = (
 				04CDD5AA1C22FA68008FD5E2 /* AppDelegate.h */,
 				04CDD5AB1C22FA68008FD5E2 /* AppDelegate.m */,
+				04CDD5E71C22FAF8008FD5E2 /* ViewController.h */,
+				04CDD5E81C22FAF8008FD5E2 /* ViewController.m */,
 				04CDD5DA1C22FAF8008FD5E2 /* EditCropFrameVC.h */,
 				04CDD5DB1C22FAF8008FD5E2 /* EditCropFrameVC.m */,
 				04CDD5DC1C22FAF8008FD5E2 /* EditCropFrameVC.xib */,
-				04CDD5DD1C22FAF8008FD5E2 /* TNCapionBar.h */,
-				04CDD5DE1C22FAF8008FD5E2 /* TNCapionBar.m */,
-				04CDD5DF1C22FAF8008FD5E2 /* TNCropImageView.h */,
-				04CDD5E01C22FAF8008FD5E2 /* TNCropImageView.m */,
-				04CDD5E11C22FAF8008FD5E2 /* TNSelectPhotoManager.h */,
-				04CDD5E21C22FAF8008FD5E2 /* TNSelectPhotoManager.m */,
-				04CDD5E31C22FAF8008FD5E2 /* UIImage+SaveToAlbum.h */,
-				04CDD5E41C22FAF8008FD5E2 /* UIImage+SaveToAlbum.m */,
-				04CDD5E51C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.h */,
-				04CDD5E61C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.m */,
-				04CDD5E71C22FAF8008FD5E2 /* ViewController.h */,
-				04CDD5E81C22FAF8008FD5E2 /* ViewController.m */,
+				044FF9551C2563C0002FC55C /* TNCapionBar.h */,
+				044FF9561C2563C0002FC55C /* TNCapionBar.m */,
+				044FF9381C255960002FC55C /* category */,
+				044FF93F1C2559CB002FC55C /* MultiSelectPhoto */,
+				044FF9341C255952002FC55C /* imageCrop */,
 				04CDD6041C22FB1A008FD5E2 /* students1.png */,
-				04CDD5F11C22FB0B008FD5E2 /* MultiSelectPhoto */,
 				04CDD5B01C22FA68008FD5E2 /* Main.storyboard */,
 				04CDD5B31C22FA68008FD5E2 /* Assets.xcassets */,
 				04CDD5B51C22FA68008FD5E2 /* LaunchScreen.storyboard */,
@@ -193,24 +227,6 @@
 				04CDD5CE1C22FA68008FD5E2 /* Info.plist */,
 			);
 			path = TNImageCropUITests;
-			sourceTree = "<group>";
-		};
-		04CDD5F11C22FB0B008FD5E2 /* MultiSelectPhoto */ = {
-			isa = PBXGroup;
-			children = (
-				04CDD5F21C22FB0B008FD5E2 /* TN_image_selected.png */,
-				04CDD5F31C22FB0B008FD5E2 /* TN_image_selected@2x.png */,
-				04CDD5F41C22FB0B008FD5E2 /* TN_image_selected@3x.png */,
-				04CDD5F51C22FB0B008FD5E2 /* TNLocalImageCell.h */,
-				04CDD5F61C22FB0B008FD5E2 /* TNLocalImageCell.m */,
-				04CDD5F71C22FB0B008FD5E2 /* TNLocalImageManager.h */,
-				04CDD5F81C22FB0B008FD5E2 /* TNLocalImageManager.m */,
-				04CDD5F91C22FB0B008FD5E2 /* TNLocalImageModel.h */,
-				04CDD5FA1C22FB0B008FD5E2 /* TNLocalImageModel.m */,
-				04CDD5FB1C22FB0B008FD5E2 /* TNLocalImageVC.h */,
-				04CDD5FC1C22FB0B008FD5E2 /* TNLocalImageVC.m */,
-			);
-			path = MultiSelectPhoto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,11 +334,11 @@
 			files = (
 				04CDD5B71C22FA68008FD5E2 /* LaunchScreen.storyboard in Resources */,
 				04CDD5B41C22FA68008FD5E2 /* Assets.xcassets in Resources */,
-				04CDD5FD1C22FB0B008FD5E2 /* TN_image_selected.png in Resources */,
+				044FF94F1C2559CB002FC55C /* TN_image_selected@3x.png in Resources */,
+				044FF94D1C2559CB002FC55C /* TN_image_selected.png in Resources */,
 				04CDD6051C22FB1A008FD5E2 /* students1.png in Resources */,
-				04CDD5FE1C22FB0B008FD5E2 /* TN_image_selected@2x.png in Resources */,
+				044FF94E1C2559CB002FC55C /* TN_image_selected@2x.png in Resources */,
 				04CDD5EA1C22FAF8008FD5E2 /* EditCropFrameVC.xib in Resources */,
-				04CDD5FF1C22FB0B008FD5E2 /* TN_image_selected@3x.png in Resources */,
 				04CDD5B21C22FA68008FD5E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,19 +364,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044FF9371C255952002FC55C /* TNCropImageView.m in Sources */,
 				04CDD5F01C22FAF8008FD5E2 /* ViewController.m in Sources */,
-				04CDD5EE1C22FAF8008FD5E2 /* UIImage+SaveToAlbum.m in Sources */,
-				04CDD5EC1C22FAF8008FD5E2 /* TNCropImageView.m in Sources */,
-				04CDD6001C22FB0B008FD5E2 /* TNLocalImageCell.m in Sources */,
+				044FF9541C2559CB002FC55C /* TNSystemImageSelectorVC.m in Sources */,
 				04CDD5AC1C22FA68008FD5E2 /* AppDelegate.m in Sources */,
-				04CDD5EF1C22FAF8008FD5E2 /* UIViewController+NavigationBarItem.m in Sources */,
-				04CDD5ED1C22FAF8008FD5E2 /* TNSelectPhotoManager.m in Sources */,
-				04CDD6011C22FB0B008FD5E2 /* TNLocalImageManager.m in Sources */,
-				04CDD6031C22FB0B008FD5E2 /* TNLocalImageVC.m in Sources */,
-				04CDD5EB1C22FAF8008FD5E2 /* TNCapionBar.m in Sources */,
+				044FF9511C2559CB002FC55C /* TNLocalImageCell.m in Sources */,
 				04CDD5E91C22FAF8008FD5E2 /* EditCropFrameVC.m in Sources */,
+				044FF93D1C255960002FC55C /* UIImage+SaveToAlbum.m in Sources */,
+				044FF9521C2559CB002FC55C /* TNLocalImageManager.m in Sources */,
+				044FF9501C2559CB002FC55C /* TNCustomImageSelectorVC.m in Sources */,
 				04CDD5A91C22FA68008FD5E2 /* main.m in Sources */,
-				04CDD6021C22FB0B008FD5E2 /* TNLocalImageModel.m in Sources */,
+				044FF9571C2563C0002FC55C /* TNCapionBar.m in Sources */,
+				044FF93E1C255960002FC55C /* UIViewController+NavigationBarItem.m in Sources */,
+				044FF9531C2559CB002FC55C /* TNLocalImageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +604,7 @@
 				04CDD5D31C22FA68008FD5E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04CDD5D41C22FA68008FD5E2 /* Build configuration list for PBXNativeTarget "TNImageCropTests" */ = {
 			isa = XCConfigurationList;
@@ -596,6 +613,7 @@
 				04CDD5D61C22FA68008FD5E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04CDD5D71C22FA68008FD5E2 /* Build configuration list for PBXNativeTarget "TNImageCropUITests" */ = {
 			isa = XCConfigurationList;
@@ -604,6 +622,7 @@
 				04CDD5D91C22FA68008FD5E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

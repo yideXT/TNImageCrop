@@ -36,17 +36,14 @@
 - (instancetype)initWithFrame:(CGRect)frame cropFrameSize:(CGSize)cropSize isRoubdFrame:(BOOL)round {
     self = [super initWithFrame:frame];
     if (self) {
-        
         if (cropSize.width<=0 || cropSize.height<=0 || cropSize.width>CGRectGetWidth(frame) || cropSize.height>CGRectGetHeight(frame)) {
-            cropSize = frame.size;
+            cropSize = self.frame.size;
         }
         
-        _isRoundCropFrame = round;
         if (_isRoundCropFrame) {//圆形边框，保证宽和高相等
             cropSize.width = MIN(cropSize.width, cropSize.height);
             cropSize.height = MIN(cropSize.width, cropSize.height);
         }
-        
         _cropSize = cropSize;
         [self setupUI];
     }
@@ -81,13 +78,19 @@
     [circleLayer setPath:[_bgPath CGPath]];
     [circleLayer setFillColor:[[UIColor clearColor] CGColor]];
     
+    //设置截图边框
+    [self configureCropFrame];
+}
+
+//设置截图边框
+- (void)configureCropFrame {
+    
     UIBezierPath *path;
     if (_isRoundCropFrame) {//圆形边框
         path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake((CGRectGetWidth(self.frame)-_cropSize.width)/2, (CGRectGetHeight(self.frame)-_cropSize.height)/2, _cropSize.width, _cropSize.height)];
     }else {//方形边框
         path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake((CGRectGetWidth(self.frame)-_cropSize.width)/2, (CGRectGetHeight(self.frame)-_cropSize.height)/2, _cropSize.width, _cropSize.height) cornerRadius:0];
     }
-    
     [path appendPath:_bgPath];
     [path setUsesEvenOddFillRule:YES];
     
@@ -104,14 +107,12 @@
     _whiteFrameLayer.frame = CGRectMake((CGRectGetWidth(self.frame)-_cropSize.width)/2, (CGRectGetHeight(self.frame)-_cropSize.height)/2, _cropSize.width, _cropSize.height);
     _whiteFrameLayer.fillColor = [UIColor clearColor].CGColor;
     _whiteFrameLayer.strokeColor = [UIColor whiteColor].CGColor;
-    
     UIBezierPath *bezierPath;
     if (_isRoundCropFrame) {//圆形边框
         bezierPath = [UIBezierPath bezierPathWithOvalInRect:_whiteFrameLayer.bounds];
     }else {//方形边框
         bezierPath = [UIBezierPath bezierPathWithRect:_whiteFrameLayer.bounds];
     }
-
     _whiteFrameLayer.lineWidth = 1;
     _whiteFrameLayer.path = bezierPath.CGPath;
     _whiteFrameLayer.strokeStart = 0.0;
@@ -146,41 +147,8 @@
     [_cropFrameLayer removeFromSuperlayer];
     [_whiteFrameLayer removeFromSuperlayer];
     
-    UIBezierPath *path;
-    if (_isRoundCropFrame) {//圆形边框
-        path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake((CGRectGetWidth(self.frame)-_cropSize.width)/2, (CGRectGetHeight(self.frame)-_cropSize.height)/2, _cropSize.width, _cropSize.height)];
-    }else {//方形边框
-        path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake((CGRectGetWidth(self.frame)-_cropSize.width)/2, (CGRectGetHeight(self.frame)-_cropSize.height)/2, _cropSize.width, _cropSize.height) cornerRadius:0];
-    }
-    [path appendPath:_bgPath];
-    [path setUsesEvenOddFillRule:YES];
-    
-    _cropFrameLayer = [CAShapeLayer layer];
-    _cropFrameLayer.name = @"cropFrameLayer";
-    _cropFrameLayer.path = path.CGPath;
-    _cropFrameLayer.fillRule = kCAFillRuleEvenOdd;
-    _cropFrameLayer.fillColor = [UIColor blackColor].CGColor;
-    _cropFrameLayer.opacity = 0.5;
-    [self.layer addSublayer:_cropFrameLayer];
-    
-    //白色边框
-    _whiteFrameLayer = [CAShapeLayer layer];
-    _whiteFrameLayer.frame = CGRectMake((CGRectGetWidth(self.frame)-_cropSize.width)/2, (CGRectGetHeight(self.frame)-_cropSize.height)/2, _cropSize.width, _cropSize.height);
-    _whiteFrameLayer.fillColor = [UIColor clearColor].CGColor;
-    _whiteFrameLayer.strokeColor = [UIColor whiteColor].CGColor;
-    UIBezierPath *bezierPath;
-    if (_isRoundCropFrame) {//圆形边框
-        bezierPath = [UIBezierPath bezierPathWithOvalInRect:_whiteFrameLayer.bounds];
-    }else {//方形边框
-        bezierPath = [UIBezierPath bezierPathWithRect:_whiteFrameLayer.bounds];
-    }
-    _whiteFrameLayer.lineWidth = 1;
-    _whiteFrameLayer.path = bezierPath.CGPath;
-    _whiteFrameLayer.strokeStart = 0.0;
-    _whiteFrameLayer.strokeEnd = 1.0;
-    [self.layer addSublayer:_whiteFrameLayer];
-    _whiteFrameLayer.opacity = 1;
-    
+    //设置截图边框
+    [self configureCropFrame];
     //重新设置图片
     [self setCropImageContent:_imageView.image];
 }
@@ -190,8 +158,8 @@
     
     CGRect rect = CGRectMake((CGRectGetWidth(self.frame)-_cropSize.width)/2, (CGRectGetHeight(self.frame)-_cropSize.height)/2, image.size.width, image.size.height);
     
-    NSLog(@"_cropSize === %@",NSStringFromCGSize(_cropSize));
-    NSLog(@"rect === %@",NSStringFromCGRect(rect));
+//    NSLog(@"_cropSize === %@",NSStringFromCGSize(_cropSize));
+//    NSLog(@"rect === %@",NSStringFromCGRect(rect));
     //判断图片的某一边长度是否小于截图边框的长度
     if (rect.size.width<_cropSize.width) {//图片宽度小于截图边框的宽度
         rect.size.width = _cropSize.width;
@@ -199,7 +167,7 @@
         
         _imageViewIsStretch = YES;
     }
-    NSLog(@"rect === %@",NSStringFromCGRect(rect));
+//    NSLog(@"rect === %@",NSStringFromCGRect(rect));
 
     if (rect.size.height<_cropSize.height) {//图片高度小于截图边框的高度
         CGFloat temp_height = rect.size.height;
@@ -209,7 +177,7 @@
         
         _imageViewIsStretch = YES;
     }
-    NSLog(@"rect === %@",NSStringFromCGRect(rect));
+//    NSLog(@"rect === %@",NSStringFromCGRect(rect));
 
     //先删除，再添加 ---- 如果一直用一个view,会有bug
     if (_imageView) {
@@ -237,11 +205,8 @@
     UIImage *image = _imageView.image;
     CGRect rect = CGRectMake((CGRectGetWidth(self.frame)-_cropSize.width)/2, (CGRectGetHeight(self.frame)-_cropSize.height)/2, _cropSize.width, _cropSize.height);
     
-//    NSLog(@"imageView === %@",NSStringFromCGRect(_imageView.frame));
     //坐标转换
     rect = [self convertRect:rect toView:_imageView];
-//    NSLog(@"rect === %@",NSStringFromCGRect(rect));
-//    NSLog(@"image.size === %@",NSStringFromCGSize(image.size));
     
     //imageView的宽度是否被拉伸过
     if (_imageViewIsStretch) {
@@ -257,13 +222,10 @@
         rect.size.height = image.size.height*((CGFloat)rect.size.height/_imageViewStretchSize.height);
         rect.size.height = ((NSInteger)rect.size.height) + (((NSInteger)(rect.size.height*10)%10)>=5?1:0);
     }
-//    NSLog(@"rect1 === %@",NSStringFromCGRect(rect));
     
     CGImageRef imageRef = CGImageCreateWithImageInRect(image.CGImage, rect);
     UIImage *cropImage = [UIImage imageWithCGImage:imageRef];
     CGImageRelease(imageRef);
-    
-//    NSLog(@"cropImage.size === %@",NSStringFromCGSize(cropImage.size));
     
     if (_isRoundCropFrame) {//切圆角图片
         cropImage = [self cropRoundImage:cropImage];
