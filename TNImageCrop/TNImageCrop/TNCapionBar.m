@@ -29,8 +29,6 @@ NSMutableArray *_titleArray;
 @implementation TNCapionBar {
     //label
     UILabel *_titleLabel;
-    //TNCapionBarType
-    TNCapionBarType _capionBarType;
 }
 #pragma mark system method
 - (instancetype)initWithTitle:(NSString *)title {
@@ -108,32 +106,24 @@ NSMutableArray *_titleArray;
     }];
 }
 
-/** 通过type获取提示字符串 */
-+ (NSString *)capionTitleWithCapionBarType:(TNCapionBarType)type {
-    switch (type) {
-        case TNCapionBarTypeNetWorkError: {
-            return @"网络连接失败，请检查您的网络连接状态";
-        }
-        case TNCapionBarTypeNotMoreData: {
-            return @"已经是最后一条数据";
-        }
-        case TNCapionBarTypeNotData: {
-            return @"没有数据";
-        }
-        case TNCapionBarTypeInputAccount: {
-            return @"请输入您的登录账号!";
-        }
-        case TNCapionBarTypeInputPassword: {
-            return @"请输入您的登录密码!";
-        }
-        default:
-            return @"请输入提示文字";
-    }
-}
-
 #pragma mark public method
 /** 屏幕顶部弹出的提示条 */
-+ (void)showScreenTopCapionBarInView:(UIView *)view CapionTitle:(NSString *)title {
++ (void)showScreenTopCapionBarInView:(UIView *)view CapionTitle:(NSString *)title isShowSame:(BOOL)showSame {
+    
+    //提示条数组
+    if (!_titleArray) {
+        _titleArray = [[NSMutableArray alloc] init];
+    }
+    
+    //判断是否是相同的提示符
+    if (!showSame) {//不连续显示相同字符的提示条
+        for (NSString *subTitle in _titleArray) {
+            if ([title isEqualToString:subTitle]) {
+                return;
+            }
+        }
+    }
+    [_titleArray addObject:title];
     
     TNCapionBar *capionBar = [[TNCapionBar alloc] initWithTitle:title];
     capionBar.frame = CGRectOffset(capionBar.frame, 0, 80);
@@ -162,51 +152,16 @@ NSMutableArray *_titleArray;
     }
 }
 
-/** 屏幕顶部弹出的提示条，不显示重复的信息 */
-+ (void)showScreenTopCapionBarInView:(UIView *)view CapionBarType:(TNCapionBarType)type {
-    
-    TNCapionBar *capionBar = [[TNCapionBar alloc] initWithTitle:[TNCapionBar capionTitleWithCapionBarType:type]];
-    capionBar.frame = CGRectOffset(capionBar.frame, 0, 80);
-    capionBar->_capionBarType = type;
-    
-    if (view) {//view存在
-        CGRect rect = [view convertRect:capionBar.frame fromView:[UIApplication sharedApplication].keyWindow];
-        capionBar.frame = rect;
-        [view addSubview:capionBar];
-        
-    }else {//view不存在
-        [[UIApplication sharedApplication].keyWindow addSubview:capionBar];
-    }
-    if (!_topCapionBarArray) {
-        _topCapionBarArray = [[NSMutableArray alloc] init];
-    }
-    
-    if (_topCapionBarArray.count == 0) {//没有正在执行的动画，立即执行
-        [_topCapionBarArray addObject:capionBar];
-        //立即执行动画
-        [capionBar immediatelyShowAndAnimation];
-        
-    }else {//有正在执行的动画
-        
-        //判断是否已经有相同类型的动画
-        for (TNCapionBar *capionBar in _topCapionBarArray) {
-            //有相同的类型
-            if (capionBar->_capionBarType == type) {
-                return;
-            }
-        }
-        //稍后执行动画
-        [_topCapionBarArray addObject:capionBar];
-    }
-}
-
 /** 屏幕底部弹出的提示条 */
-+ (void)showScreenBottomCapionBarInView:(UIView *)view CapionTitle:(NSString *)title {
++ (void)showScreenBottomCapionBarInView:(UIView *)view CapionTitle:(NSString *)title isShowSame:(BOOL)showSame {
     
-    //判断是否是相同的提示符
+    //提示条数组
     if (!_titleArray) {
         _titleArray = [[NSMutableArray alloc] init];
-    }else {
+    }
+    
+    //判断是否是相同的提示符
+    if (!showSame) {//不连续显示相同字符的提示条
         for (NSString *subTitle in _titleArray) {
             if ([title isEqualToString:subTitle]) {
                 return;
@@ -236,45 +191,6 @@ NSMutableArray *_titleArray;
         //立即执行动画
         [capionBar immediatelyShowAndAnimation];
     }else {
-        //稍后执行动画
-        [_bottomCapionBarArray addObject:capionBar];
-    }
-}
-
-/** 屏幕底部弹出的提示条，不显示重复的信息 */
-+ (void)showScreenBottomCapionBarInView:(UIView *)view CapionBarType:(TNCapionBarType)type {
-    
-    TNCapionBar *capionBar = [[TNCapionBar alloc] initWithTitle:[TNCapionBar capionTitleWithCapionBarType:type]];
-    capionBar.frame = CGRectOffset(capionBar.frame, 0, [UIScreen mainScreen].bounds.size.height-64);
-    capionBar->_capionBarType = type;
-    
-    if (view) {//view存在
-        CGRect rect = [view convertRect:capionBar.frame fromView:[UIApplication sharedApplication].keyWindow];
-        capionBar.frame = rect;
-        [view addSubview:capionBar];
-        
-    }else {//view不存在
-        [[UIApplication sharedApplication].keyWindow addSubview:capionBar];
-    }
-    
-    if (!_bottomCapionBarArray) {
-        _bottomCapionBarArray = [[NSMutableArray alloc] init];
-    }
-    
-    if (_bottomCapionBarArray.count == 0) {//没有正在执行的动画，立即执行
-        [_bottomCapionBarArray addObject:capionBar];
-        //立即执行动画
-        [capionBar immediatelyShowAndAnimation];
-        
-    }else {//有正在执行的动画
-        
-        //判断是否已经有相同类型的动画
-        for (TNCapionBar *capionBar in _bottomCapionBarArray) {
-            //有相同的类型
-            if (capionBar->_capionBarType == type) {
-                return;
-            }
-        }
         //稍后执行动画
         [_bottomCapionBarArray addObject:capionBar];
     }
